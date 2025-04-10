@@ -1,0 +1,27 @@
+RSA vs AES
+
+RSA (Rivest-Shamir-Adleman) and AES (Advanced Encryption Standard) are two cryptographic algorithms widely used for securing data. However, they have distinct characteristics, use cases, and performance considerations:
+
+Encryption Type:
+
+RSA is an asymmetric encryption algorithm, meaning it uses a pair of keys: a public key for encryption and a private key for decryption. This ensures that data encrypted with a public key can only be decrypted by the corresponding private key.
+
+AES, on the other hand, is a symmetric encryption algorithm. It uses the same key for both encryption and decryption, meaning both the sender and receiver must share the same secret key.
+
+Performance:
+
+RSA is computationally expensive and slower, especially when encrypting large amounts of data. This is because the algorithm relies on the difficulty of factoring large prime numbers, which is time-consuming. RSA is typically used to encrypt small amounts of data, such as symmetric keys.
+
+AES is much faster than RSA and is typically used for encrypting large amounts of data. AES is considered more efficient in terms of speed and resource usage due to its symmetric nature.
+
+Security:
+
+RSA is more secure for key exchange and digital signatures, as the private key is never shared, only the public key is used for encryption. However, its security relies on the difficulty of factoring large numbers.
+
+AES is known for its robust security when used with a sufficiently long key size (256 bits being the most secure). AES-256 is considered highly secure and is widely used for data encryption.
+
+Use Cases:
+
+RSA is commonly used for securing communications in protocols like SSL/TLS, where the public key encrypts the session key, which is then used with symmetric encryption (AES) for the actual data transmission.
+
+AES is used for encrypting large volumes of data, such as files or messages in bulk, due to its speed and efficiency. 
